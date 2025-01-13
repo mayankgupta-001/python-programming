@@ -5,7 +5,7 @@ class Employee:
     self.deptt = deptt
     self.salary = salary
 
-  def display(self):
+  def display_info(self):
     emp = f'''
     Name: {self.name}
     dep: {self.deptt}
@@ -35,7 +35,7 @@ class Employee_management(Employee):
 
   def display_all(self):
     for emp in self.reg:
-      self.reg[emp].display()
+      self.reg[emp].display_info()
 
   def incrementt(self,emp_id,inc):
     if emp_id not in self.reg:
@@ -59,10 +59,10 @@ system.display_all()
 
 #main
 # emp1 = Employee('Ram',12,'cse',12000)
-# emp1.display()
+# emp1.display_info()
 
 # emp1.update_info(name='raj')
-# emp1.display()
+# emp1.display_info()
 
 # emp1.increment(10)
-# emp1.display()
+# emp1.display_info()
