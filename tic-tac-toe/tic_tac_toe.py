@@ -30,15 +30,14 @@ for i in range(9):
     choices[mv] = turns
     print_board(choices)
 
-    # Check for win conditions
-    if (choices[0] == choices[1] == choices[2] != ' ' or  # Row 1
-        choices[3] == choices[4] == choices[5] != ' ' or  # Row 2
-        choices[6] == choices[7] == choices[8] != ' ' or  # Row 3
-        choices[0] == choices[3] == choices[6] != ' ' or  # Column 1
-        choices[1] == choices[4] == choices[7] != ' ' or  # Column 2
-        choices[2] == choices[5] == choices[8] != ' ' or  # Column 3
-        choices[0] == choices[4] == choices[8] != ' ' or  # Diagonal 1
-        choices[2] == choices[4] == choices[6] != ' '):   # Diagonal 2
+    if (choices[0] == choices[1] == choices[2] != ' ' or  
+        choices[3] == choices[4] == choices[5] != ' ' or  
+        choices[6] == choices[7] == choices[8] != ' ' or  
+        choices[0] == choices[3] == choices[6] != ' ' or  
+        choices[1] == choices[4] == choices[7] != ' ' or  
+        choices[2] == choices[5] == choices[8] != ' ' or  
+        choices[0] == choices[4] == choices[8] != ' ' or  
+        choices[2] == choices[4] == choices[6] != ' '):
         print(f"Congratulations {name}, you won!")
         break
 
