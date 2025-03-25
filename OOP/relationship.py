@@ -44,7 +44,7 @@ Salary: {self.salary}''')
 'Container class'
 class Management:
     def __init__(self, emp):
-        self.emp = emp
+        self.emp = emp  # Has-A Relationship
 
 emp1 = Employee('Raghav', 'gla124', 12500)
 system = Management(emp1)
